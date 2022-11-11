@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 _*
 dataset/*
+spark-warehouse/*
+metastore_db/*
+derby.log
