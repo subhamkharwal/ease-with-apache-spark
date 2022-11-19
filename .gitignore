@@ -4,3 +4,4 @@ dataset/*
 spark-warehouse/*
 metastore_db/*
 derby.log
+sales_delta_mapping/*
