@@ -6,13 +6,14 @@ import time
 import random
 from device_events import generate_events
 
-__bootstrap_server = "kafka:9092"
+__bootstrap_server = "kafka:29092"
 
 
 def post_to_kafka(data):
+    print('data: '+ str(data))
     producer = KafkaProducer(bootstrap_servers=__bootstrap_server)
-    producer.send('device_data', key=b'device', value=data)
-    producer.flush()
+    producer.send('devices', key=b'device', value=data)
+    #producer.flush()
     producer.close()
     print("Posted to topic")
 
