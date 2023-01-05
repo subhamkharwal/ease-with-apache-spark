@@ -5,3 +5,7 @@ spark-warehouse/*
 metastore_db/*
 derby.log
 sales_delta_mapping/*
+checkpoint_dir/*
+data/archive/*
+data/output/*
+data/input/*
